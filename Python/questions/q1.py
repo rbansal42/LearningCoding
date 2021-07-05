@@ -5,18 +5,17 @@
 a = input("Enter number a: ")
 b = input("Enter number b: ")
 
-print(max(a, b))
 
-def max(a, b):
+def max1(a, b):
 
+    if(a == b):
+        return
     
-    if(a > b):
+    elif(a > b):
         return a
-
-    elif(a == b):
-        # print("Both Values are equal")
-        return 0
-        
+    
     elif(a < b):
         return b
 
+
+print(max1(a, b))
